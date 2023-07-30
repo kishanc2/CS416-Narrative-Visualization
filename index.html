@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is the tech industry sexist?</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+    <meta name="twitter:image" content="./images/title.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="noindex"/>
+
+    <style>
+        .btn-group button {
+  background-color: #000000; /* Green background */
+  border: 1px solid rgb(0, 0, 0); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #00d9ff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="btn-group">
+        <p>Slideshow:</p>
+        <button onclick="window.location.href='index.html';">1</button>
+        <button onclick="window.location.href='second.html';">2</button>
+        <button onclick="window.location.href='third.html';">3</button>
+      </div>
+    <div class="content">
+        <div class="sketch1-container">
+            
+            <div id="plot1">
+                <h3>Wage Gap in Tech Over Time</h3>
+            </div>
+            <span class="source">Source: <a href="https://www.bls.gov/cps/earnings.htm" target="_blank">Bureau of Labor Statistics</a></span>
+        </div>
+        <br><br><br>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="sketch1.js"></script>
+    <script src="sketch2.js"></script>
+    <script src="sketch3.js"></script>
+</body>
+
+</html>

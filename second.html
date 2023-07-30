@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is the tech industry sexist?</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+    <meta name="twitter:image" content="./images/title.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="noindex"/>
+
+    <style>
+        .btn-group button {
+  background-color: #000000; /* Green background */
+  border: 1px solid rgb(0, 0, 0); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #00d9ff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="btn-group">
+        <p>Slideshow:</p>
+        <button onclick="window.location.href='index.html';">1</button>
+        <button onclick="window.location.href='second.html';">2</button>
+        <button onclick="window.location.href='third.html';">3</button>
+      </div>
+        <div class="sketch2-container">
+            <h2>What about race?</h2>
+         
+            <div>
+                <div class="dropdown" id="women-category">
+                    <div class="dropdown-button" id="women-button">Average Women </div>
+                    <span class="triangle"> &#9660;</span>
+                    <ul class="dropdown-selection" id="selection-women">
+                        <li type="Asian" id="Female">Asian Women</li>
+                        <li type="Average" id="Female">Average Women</li>
+                        <li type="Black" id="Female">Black Women</li>
+                        <li type="Hispanic" id="Female">Hispanic Women</li>
+                        <li type="White" id="Female">White Women</li>
+                    </ul>
+                </div>
+                &nbsp make <span id="percentSalary"> </span> of what &nbsp
+                <div class="dropdown" id="male-category">
+                    <div class="dropdown-button" id="male-button"> Average Men</div>
+                    <span class="triangle"> &#9660;</span>
+                    <ul class="dropdown-selection" id="selection-male">
+                        <li type="Asian" id="Male">Asian Men</li>
+                        <li type="Average" id="Male">Average Men</li>
+                        <li type="Black" id="Male">Black Men</li>
+                        <li type="Hispanic" id="Male">Hispanic Men</li>
+                        <li type="White" id="Male">White Men</li>
+                    </ul>
+                </div>
+                &nbsp get paid.
+            </div>
+            <div id="plot2">
+            </div>
+            <span class="source">Source: <a href="https://www.bls.gov/cps/earnings.htm" target="_blank">Bureau of Labor Statistics</a></span>
+        </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="sketch1.js"></script>
+    <script src="sketch2.js"></script>
+    <script src="sketch3.js"></script>
+</body>
+
+</html>
